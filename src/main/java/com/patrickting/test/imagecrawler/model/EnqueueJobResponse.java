@@ -1,4 +1,4 @@
-package com.tilofy.test.imagecrawler.model;
+package com.patrickting.test.imagecrawler.model;
 
 public class EnqueueJobResponse {
 

@@ -13,7 +13,7 @@
         <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
         <init-param>
             <param-name>javax.ws.rs.Application</param-name>
-            <param-value>com.tilofy.test.imagecrawler.ImageCrawlerApplication</param-value>
+            <param-value>com.patrickting.test.imagecrawler.ImageCrawlerApplication</param-value>
         </init-param>
         <init-param>
             <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>

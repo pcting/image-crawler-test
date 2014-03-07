@@ -1,6 +1,6 @@
-package com.tilofy.test.imagecrawler;
+package com.patrickting.test.imagecrawler;
 
-import static com.tilofy.test.imagecrawler.ImageCrawlerApplication.JOB_STATUS;
+import static com.patrickting.test.imagecrawler.ImageCrawlerApplication.JOB_STATUS;
 
 import java.awt.AlphaComposite;
 import java.awt.Graphics2D;
@@ -24,8 +24,8 @@ import akka.actor.UntypedActor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 
-import com.tilofy.test.imagecrawler.ImageCrawlerApplication.JobStatus;
-import com.tilofy.test.imagecrawler.messages.ImageCrawlerActorJob;
+import com.patrickting.test.imagecrawler.ImageCrawlerApplication.JobStatus;
+import com.patrickting.test.imagecrawler.messages.ImageCrawlerActorJob;
 
 public class ImageCrawlActor extends UntypedActor {
 

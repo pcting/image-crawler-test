@@ -1,4 +1,4 @@
-package com.tilofy.test.imagecrawler;
+package com.patrickting.test.imagecrawler;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -19,6 +19,8 @@ import org.apache.http.impl.client.HttpClients;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import com.patrickting.test.imagecrawler.ImageCrawlActor;
 
 import akka.actor.ActorSystem;
 import akka.actor.Props;
@@ -48,7 +50,7 @@ public class ImageCrawlActorTest {
         TestActorRef<ImageCrawlActor> ref = TestActorRef.create(system, props, "imagecrawlerrouter");
         ImageCrawlActor actor = ref.underlyingActor();
         int jobId = 1;
-        String url = "http://www.prconversations.com/wp-content/uploads/2011/08/twitter_icon4.jpg";
+        String url = "https://raw.github.com/pcting/image-crawler-test/master/src/test/resources/unmangler.jpg";
         int width = 80;
         int height = 60;
 

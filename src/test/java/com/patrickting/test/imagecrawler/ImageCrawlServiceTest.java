@@ -1,4 +1,4 @@
-package com.tilofy.test.imagecrawler;
+package com.patrickting.test.imagecrawler;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
@@ -15,7 +15,8 @@ import org.junit.Test;
 import akka.actor.ActorSelection;
 import akka.actor.ActorSystem;
 
-import com.tilofy.test.imagecrawler.model.EnqueueJobResponse;
+import com.patrickting.test.imagecrawler.ImageCrawlerService;
+import com.patrickting.test.imagecrawler.model.EnqueueJobResponse;
 
 public class ImageCrawlServiceTest {
 
@@ -26,7 +27,7 @@ public class ImageCrawlServiceTest {
         ActorSelection actor = mock(ActorSelection.class);
         ActorSystem system = mock(ActorSystem.class);
         ImageCrawlerService service = spy(new ImageCrawlerService(system));
-        String url = "http://www.prconversations.com/wp-content/uploads/2011/08/twitter_icon4.jpg";
+        String url = "https://raw.github.com/pcting/image-crawler-test/master/src/test/resources/unmangler.jpg";
         String size = "80x60";
         int jobId = 12345;
         when(service.getNextJobId()).thenReturn(jobId);

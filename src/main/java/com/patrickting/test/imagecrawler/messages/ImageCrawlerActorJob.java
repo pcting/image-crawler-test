@@ -1,4 +1,4 @@
-package com.tilofy.test.imagecrawler.messages;
+package com.patrickting.test.imagecrawler.messages;
 
 public class ImageCrawlerActorJob {
 

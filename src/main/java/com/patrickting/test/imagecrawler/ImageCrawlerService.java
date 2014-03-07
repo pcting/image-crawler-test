@@ -1,6 +1,6 @@
-package com.tilofy.test.imagecrawler;
+package com.patrickting.test.imagecrawler;
 
-import static com.tilofy.test.imagecrawler.ImageCrawlerApplication.JOB_STATUS;
+import static com.patrickting.test.imagecrawler.ImageCrawlerApplication.JOB_STATUS;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -31,9 +31,9 @@ import akka.actor.ActorSystem;
 import akka.pattern.Patterns;
 import akka.util.Timeout;
 
-import com.tilofy.test.imagecrawler.ImageCrawlerApplication.JobStatus;
-import com.tilofy.test.imagecrawler.messages.ImageCrawlerActorJob;
-import com.tilofy.test.imagecrawler.model.EnqueueJobResponse;
+import com.patrickting.test.imagecrawler.ImageCrawlerApplication.JobStatus;
+import com.patrickting.test.imagecrawler.messages.ImageCrawlerActorJob;
+import com.patrickting.test.imagecrawler.model.EnqueueJobResponse;
 
 @Path("/queue/")
 public class ImageCrawlerService {

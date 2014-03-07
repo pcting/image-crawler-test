@@ -1,4 +1,4 @@
-package com.tilofy.test.imagecrawler;
+package com.patrickting.test.imagecrawler;
 
 import java.awt.image.BufferedImage;
 import java.util.HashSet;
